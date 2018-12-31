@@ -13,5 +13,5 @@ async def on_message(message):
     if message.author != client.user:
         await client.send_message(message.channel, message.content[::-1])
 
-token = os.environ.get("NTI4NTg3MzgyNzU3MjYxMzIz.DwtF5g.9L5rCdG8jLZpNqrhYJAttx-3GCQ")
-client.run(token)
+
+client.run(os.getenv('TOKEN'))
