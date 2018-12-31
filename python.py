@@ -13,7 +13,7 @@ async def on_ready():
 @client.event        
 async def on_message(message):
      if "not" in message.content:
-           await client.send_message(message.channel, 'yes')
+           await client.send_message(message.channel, 'yes' + message.content)
 
 
 client.run(os.getenv('TOKEN'))
