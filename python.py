@@ -10,7 +10,7 @@ async def on_ready():
     
 @client.event  
 async def on_message(message):
-     if "bad bot" in message.content:
+     if "bad" in message.content:
            await client.send_message(message.channel, 'no u')
 
 
