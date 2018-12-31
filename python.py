@@ -7,6 +7,11 @@ client = discord.Client()
 async def on_ready():
     print("I'm in")
     print(client.user)
+    
+@client.event  
+async def on_message(message):
+     if "bad bot" in message.content:
+           await client.send_message(message.channel, 'no u')
 
 
         
