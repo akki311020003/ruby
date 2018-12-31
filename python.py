@@ -12,6 +12,11 @@ async def on_ready():
 async def on_message(message):
      if "bad" in message.content:
            await client.send_message(message.channel, 'no u')
+        
+@client.event  
+async def on_message(message):
+     if "good" in message.content:
+           await client.send_message(message.channel, 'My nature is based on your behaviour ;P')        
 
 
         
