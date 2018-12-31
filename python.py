@@ -10,10 +10,7 @@ async def on_ready():
 
 
         
-@client.event        
-async def on_message(message):
-    if message.content.startswith('not')
-           await client.send_message(message.channel, 'yes')
+
 
 
 client.run(os.getenv('TOKEN'))
